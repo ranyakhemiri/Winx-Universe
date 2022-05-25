@@ -9,7 +9,4 @@ public class Stella extends Fee{
 		super("Stella");
 		this.Symbole = "FS";
 	}
-	public String getSymbole() {
-		return Symbole;
-	}
 }

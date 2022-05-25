@@ -7,7 +7,6 @@ import tresors.Typetresorr;
  * @param gagnerTresor attribue a la fee un tresor aleatoirement (soit un pouvoir soit une armure)
  */ 
 public class Fee extends Personnage{
-	public String Symbole;
     public int nbPouvoirs;
 	public int nbArmure=0;
     public int ptprotec;

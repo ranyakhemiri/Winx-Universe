@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>110</y>
+      <w>280</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>Personnage
+--
+# vie: int
+# nom: String
+# Symbole: String
+# NbArmure: int
+# ptprotec: int
+--
++ getVie(): int
++ getNbArmure(): int
++ die(): String
++ win(): String
++ regeneration(): String
++ attaquer(Personnage,int): String
++ subirAttaque(Personnage,int): String
++ getSymbole(): String
++ getNom(): String
+/+ gagnerTresor(): String/</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

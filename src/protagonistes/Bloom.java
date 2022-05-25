@@ -11,7 +11,4 @@ public class Bloom extends Fee{
 		super("Bloom");
 		this.Symbole = "FB";
 	}
-	public String getSymbole() {
-		return Symbole;
-	}
 }

@@ -9,7 +9,4 @@ public class Stormy extends Sorciere{
 		super("Stormy");
 		this.Symbole = "SS";
 	}
-	public String getSymbole() {
-		return Symbole;
-	}
 }

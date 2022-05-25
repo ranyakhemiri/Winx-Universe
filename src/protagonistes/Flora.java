@@ -9,7 +9,4 @@ public class Flora extends Fee{
 		super("Flora");
 		this.Symbole = "FF";
 	}
-	public String getSymbole() {
-		return Symbole;
-	}
 }

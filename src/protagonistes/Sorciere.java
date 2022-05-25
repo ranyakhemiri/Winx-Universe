@@ -8,7 +8,6 @@ import tresors.Typetresorr;
  */ 
 
 public class Sorciere extends Personnage{
-	public String Symbole;
 	public int nbSortileges;
 	public int nbArmure=0;
     public int ptprotec;
