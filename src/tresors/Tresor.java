@@ -16,18 +16,18 @@ public class Tresor {
     }
 
     public void setProprio (Personnage e){
-        //le trésor est attribué à un protagoniste
+        //le tresor est attribuee a un protagoniste
         this.proprio=e;
     }
 
     public Personnage getProprio(){
-        //retourne le propriétaire de l'arme
+        //retourne le proprietaire de l'arme
         return this.proprio;
         //car cet attribut n'est visible que pour les classes filles ("protected")
     }
 
     public String getNature(){
-        //renvoie la nature du trésor baguette magique ou sortilege
+        //renvoie la nature du tresor baguette magique ou sortilege
         return nature;
     }
     

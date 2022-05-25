@@ -1,13 +1,17 @@
 package maps;
 import javax.swing.JRadioButton;
-
 import protagonistes.Personnage;
+
+/**
+ * @author yaici-khemiri-duguait
+ * @param Case constructeur qui associe a la case sa coordonnee et le personnage qui l'occupe
+ */ 
 
 public class Case extends JRadioButton{
 	private static final long serialVersionUID = 1L;
 	private Personnage occupant;
-	private int position;
-	private int place; /* depart arrivee null */
+	private int position; /* position initiale de la case */
+	private int place; /* case ou le protagoniste souhaite aller */
 	public Case(int position, Personnage occupant) {
 		this.position = position;
 		this.occupant = occupant;

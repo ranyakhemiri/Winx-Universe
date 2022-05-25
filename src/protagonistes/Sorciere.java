@@ -1,6 +1,11 @@
 package protagonistes;
-
 import tresors.Typetresorr;
+
+/**
+ * @author yaici-khemiri-duguait
+ * @param Sorciere est la classe qui contient les caracteristiques d'une sorciere (points de vie, sortileges..)
+ * @param gagnerTresor attribue a la sorciere un tresor aleatoirement (soit un sortilege soit une armure)
+ */ 
 
 public class Sorciere extends Personnage{
 	public String Symbole;
@@ -46,7 +51,7 @@ public class Sorciere extends Personnage{
 	// @Override
 		public String attaquer(Fee f,int nb_degats) {
 			String texte=" ";
-			texte+="La sorciere "+getNom()+" attaque la fee présente sur la case";
+			texte+="La sorciere "+getNom()+" attaque la fee prï¿½sente sur la case";
 		    f.subirAttaque( this, 10  );
 			return texte;
 			}
@@ -56,7 +61,7 @@ public class Sorciere extends Personnage{
 		// @Override
 		public String subirAttaque(Fee f,int nb_degats) {
 			String texte=" ";
-			texte+="La sorciere "+this.getNom()+" est attaquée";
+			texte+="La sorciere "+this.getNom()+" est attaquï¿½e";
 
 			if(nbArmure!=0){
 				if(ptprotec>nb_degats){

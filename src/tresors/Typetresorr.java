@@ -1,6 +1,9 @@
 package tresors;
-
 import java.util.Random;
+
+/**
+ * @param Typetresor genere de maniere aleatoire un tresor que le vainqueur d'un combat gagnera 
+ */
 
 public enum Typetresorr {
 	  
@@ -12,18 +15,5 @@ public enum Typetresorr {
         int randIndex = new Random().nextInt(length);
         return values[randIndex];
     }
-    
-
-
-
-
-
-
-//public static void main(String[] args) {
-//    System.out.println(Typetresorr.generateRandomTresor()); 
-//    System.out.println(Typetresorr.generateRandomTresor()); 
-//    System.out.println(Typetresorr.generateRandomTresor()); 
-//}
-
 
 }

@@ -14,7 +14,7 @@ public Sortilege(){
 
 public String attaque (Fee f){
     String texte="";
-    texte= this.proprio.getNom()+" attaque la fée "+f.getNom()+" avec son sortilège.";
+    texte= this.proprio.getNom()+" attaque la fee "+f.getNom()+" avec son sortilege.";
     texte += f.subirAttaque (this.proprio,this.degats);
     return texte;
 }

@@ -2,6 +2,11 @@ package jeu;
 import java.util.Random;
 import java.util.Scanner;
 import maps.Grille;
+/**
+ * @author yaici-khemiri-duguait
+ * @param main affiche et execute le jeu sur la console 
+ */ 
+
 
 public class Jeu {
 	public static void main(String[] args) {
@@ -17,22 +22,24 @@ public class Jeu {
 		Scanner sc = new Scanner(System.in);
 		int NB_TOUR = 0;
 		while (!Exit) {
-			/* Incrémente le nombre de tour */
+			/* Incrï¿½mente le nombre de tour */
 			NB_TOUR ++;
 			/* Affiche le tour */
-			System.out.println("Tour numéro "+NB_TOUR+" c'est au tour de l'equipe des "+Equipe_Jeu+"s");
+			System.out.println("Tour numero "+NB_TOUR+": c'est au tour de l'equipe des "+Equipe_Jeu+"s");
 			grille.afficher_map(); /* Affichage de la carte */
-			/* Définition point de départ */
+			/* Dï¿½finition point de dï¿½part */
 			boolean selection_depart = false;
 			while (!selection_depart) {
 				System.out.println("Quel pion voulez-vous bouger ?");
-				int depart = sc.nextInt();
+				String strD= sc.nextLine(); //rï¿½cupï¿½re l'entrï¿½e de l'utilisateur sous forme de lettre(colonne)+chiffre(ligne)
+				int depart = grille.modifier_input(strD); //traduit cette entrï¿½e String en une coordonnï¿½e valable
 				if (grille.selection_valide(depart, Equipe_Jeu)) {
 					boolean selection_arivee = false;
-					/* Définition point d'arrivée */
+					/* Dï¿½finition point d'arrivï¿½e */
 					while (!selection_arivee) {
 						System.out.println("Ou voulez-vous aller ?");
-						int arivee = sc.nextInt();
+						String strA= sc.nextLine(); 
+						int arivee = grille.modifier_input(strA);
 						if (grille.deplacement(depart, arivee) < 3) {
 							selection_arivee = true;
 							selection_depart = true;
@@ -47,7 +54,7 @@ public class Jeu {
 	        if (str.equals("y")) {
 	        	Exit = !Exit;
 	        }
-	        /* Changement de coté */
+	        /* Changement de cotï¿½ */
 	        if (Equipe_Jeu == "Sorciere") {
 	        	Equipe_Jeu = "Fee";
 	        }

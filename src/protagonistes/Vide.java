@@ -1,5 +1,9 @@
 package protagonistes;
 
+/**
+ * @author yaici-khemiri-duguait
+ * @param Vide represente une case libre sur l'echiquier
+ */
 public class Vide extends Personnage{
 	private String Symbole = "  ";
 	

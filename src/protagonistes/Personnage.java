@@ -1,6 +1,14 @@
 package protagonistes;
-
 import Bataille.Batailles;
+
+/**
+ * @author yaici-khemiri-duguait
+ * @param die affiche un message qui indique la mort d'un protagoniste
+ * @param regeneration lorsqu'un joueur gagne le combat on lui redonne tous ses points de vie
+ * @param attaquer affiche un message qui indique l'attaquant et l'attaquÃ©, et excute l'attaque sur la victime
+ * @param subirAttaque traite une attaque contre le protagoniste victime (selon ses pts de vie, de protection..)
+ * @param gagnerTresor attribue a un protagoniste vainceur un tresor a la fin du combat
+ */ 
 
 public abstract class Personnage {
 	protected int vie;
@@ -26,7 +34,7 @@ public abstract class Personnage {
 	
 	public String die() {
 		String texte=" ";
-		texte+=this.getNom()+" n'a pas survécu \n";
+		texte+=this.getNom()+" n'a pas survï¿½cu \n";
 		//il faut remove ici
 		return texte;
 		}
@@ -43,7 +51,7 @@ public abstract class Personnage {
 		String texte=" ";
 		if(vie<20){
 			vie=20;
-			texte+=this.getNom()+" a récupéré ses points de vie \n";
+			texte+=this.getNom()+" a rï¿½cupï¿½rï¿½ ses points de vie \n";
 		}
 		else{
 			texte+=this.getNom()+" a deja tous ses points de vie \n";
@@ -54,14 +62,14 @@ public abstract class Personnage {
 	
 	public String attaquer(Personnage p,int degat) {
 		String texte=" ";
-		texte+="Le Personnage "+getNom()+" attaque "+p.getNom()+" présente sur la case";
+		texte+="Le protagoniste "+getNom()+" attaque "+p.getNom()+" prï¿½sente sur la case";
 		texte+="\n"+p.subirAttaque( this, 10  );
 		return texte;
 	}
 	
 	public String subirAttaque(Personnage p,int nb_degats) {
 		String texte=" ";
-		texte+="La sorciere "+this.getNom()+" est attaquée\n";
+		texte+="Le protagoniste "+this.getNom()+" est attaquee\n";
 
 		
 		if(NbArmure!=0){

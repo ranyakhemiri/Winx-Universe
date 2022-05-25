@@ -1,10 +1,13 @@
 package Bataille;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import protagonistes.Fee;
 import protagonistes.Sorciere;
+
+/**
+ * @author yaici-khemiri-duguait
+ * @param Camps gere les camps du jeux
+ */ 
 
 public class Camps {
     private List<Sorciere> witch= new ArrayList<>(16);
