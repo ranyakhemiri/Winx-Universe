@@ -24,6 +24,15 @@ public class Camps {
 	public int nbFees() {
 		return fee.size();
 	}
-
-    
+	
+	public String finPartie(){
+        String txt=" ";
+        if (nbSorcieres()==0 || nbFees()==0){
+            txt+="C'est la fin de la partie";
+        }
+        else{
+            txt+="Passez au tour suivant";
+        }
+        return txt;
+    }
     }

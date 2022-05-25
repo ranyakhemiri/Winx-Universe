@@ -56,14 +56,15 @@ public class Grille{
 	}
 	
 	public void afficher_map() {
-		String maps = "";
+		String maps = "  a  b  c  d  e  f  g  h\n0";
 		int i = 0;
 		while(i<64) {
 			maps += "|";
 			maps += map[i].getOccupant().getSymbole();
 			i++;
-			if (i%8 == 0) {maps += "|\n";}
+			if ((i%8 == 0) && (i<64)) {maps += "|\n"+i/8;}
 		}
+		maps += "|";
 		System.out.println(maps);
 	}
 	
@@ -102,7 +103,6 @@ public class Grille{
 			if (perso2.getOccupant().getVie()<=0) {
 				map[perso2.getPosition()] = new Case(perso2.getPosition(),new Vide());
 				deplacement(perso1.getPosition(), perso2.getPosition());
-				
 			}
 		}
 		else if (perso1.getOccupant().getSymbole().charAt(0) == 'F') {
