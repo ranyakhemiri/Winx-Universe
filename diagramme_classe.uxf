@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>10</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>70</x>
-      <y>110</y>
-      <w>280</w>
-      <h>290</h>
+      <x>744</x>
+      <y>234</y>
+      <w>168</w>
+      <h>186</h>
     </coordinates>
     <panel_attributes>Personnage
+Package::protagonistes
 --
 # vie: int
 # nom: String
@@ -28,5 +29,630 @@
 + getNom(): String
 /+ gagnerTresor(): String/</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>684</x>
+      <y>486</y>
+      <w>168</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>Fee
+--
++ nbPouvoirs: int
++ nbArmure: int
++ ptprotec: int
+--
++ getNbPouvoirs (): int
++ getNbArmures  (): int
++ getNbptprotec (): int
++ subirAttaque(Sorciere, int): String
++ gagnerTresor(): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>774</x>
+      <y>414</y>
+      <w>60</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>882</x>
+      <y>486</y>
+      <w>168</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Sorciere
+--
++ nbSortileges: int
++ nbArmure: int
++ ptprotec: int
+--
++ getNbSortileges (): int
++ getNbArmures  (): int
++ getNbptprotec (): int
++ gagnerTresor(): String
++ subirAttaque(Sorciere, int): String
++ attaquer(Fee,int): String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>414</y>
+      <w>138</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>564</x>
+      <y>486</y>
+      <w>102</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Vide
+--
+- Symbole : String =" "
+--
++ win() : String
++ die() : String
++ gagnerTresor(): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>612</x>
+      <y>414</y>
+      <w>174</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>270.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>636</x>
+      <y>672</y>
+      <w>54</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Bloom
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>702</x>
+      <y>672</y>
+      <w>54</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Flora
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>768</x>
+      <y>672</y>
+      <w>54</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Stella
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>828</x>
+      <y>672</y>
+      <w>54</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Musa
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>912</x>
+      <y>672</y>
+      <w>54</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Stormy
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>972</x>
+      <y>672</y>
+      <w>54</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Icy
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>930</x>
+      <y>594</y>
+      <w>18</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>594</y>
+      <w>18</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>798</x>
+      <y>582</y>
+      <w>72</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>768</x>
+      <y>582</y>
+      <w>36</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>726</x>
+      <y>582</y>
+      <w>36</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>582</y>
+      <w>72</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>528</y>
+      <w>774</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..n
+&lt; posséder</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;380.0;1270.0;380.0;1270.0;10.0;1200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>282</x>
+      <y>252</y>
+      <w>168</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>Tresor
+Package::tresors
+--
+# proprio: Personnage
+# nature: String
+
+--
++ setProprio (Personnage)
++ getProprio(): Personnage
++ getNature(): String
++ randtresor(): Typetresorr 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>282</x>
+      <y>486</y>
+      <w>114</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Sortilege 
+--
+# proprio: Sorciere
++ degats: int
+
+--
++ attaque (Fee): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>426</x>
+      <y>486</y>
+      <w>114</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Pouvoir 
+--
+# proprio: Fee
++ degats: int
+
+--
++ attaque (Sorciere): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>486</y>
+      <w>114</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Armure  
+--
+- protection: int
+
+--
++  getNature(): String
++  getProtection(): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>204</x>
+      <y>348</y>
+      <w>120</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>402</x>
+      <y>348</y>
+      <w>90</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>348</y>
+      <w>48</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>252</y>
+      <w>168</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt; enum &gt;&gt;
+Package::tresors
+Typetresorr
+--
++ ARMURE 	     :EnumConstant
++ POUVOIR	     :EnumConstant
++ SORTILEGE :EnumConstant
+
+--
+_+generateRandomTresor(): Typetresorr_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>162</x>
+      <y>300</y>
+      <w>132</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=1..n</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>552</y>
+      <w>228</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..n
+&lt; posséder</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0;280.0;130.0;280.0;30.0;360.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>384</y>
+      <w>972</w>
+      <h>444</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..n
+&lt; posséder</panel_attributes>
+    <additional_attributes>10.0;290.0;10.0;720.0;1600.0;720.0;1600.0;10.0;1200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1260</x>
+      <y>210</y>
+      <w>126</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Case
+Package::maps
+--
+- occupant: Personnage
+- position: int
+- place: int
+
+--
++  setPlace(int)
++  getPlace(): int
++  getOccupant(): Personnage
++  getPosition(): int
++  setOccupant(Personnage)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>906</x>
+      <y>246</y>
+      <w>366</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..1
+occuper &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;590.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1494</x>
+      <y>210</y>
+      <w>162</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>Grille
+Package::maps
+--
+- map: Case[]
+
+--
++  getMap(int): Case
++  init_terrain_Sorciere()
++  init_terrain_vide()
++  init_terrain_Fee()
++  init_map()
++  afficher_map()
++  selection_valide(int, String): boolean
++  input_init(String): int
++  modifier_input(String): int
++  deplacement(int,int): int
++  combat(Case,Case)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1380</x>
+      <y>270</y>
+      <w>126</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2= 64
+m1= 1..1</panel_attributes>
+    <additional_attributes>190.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1542</x>
+      <y>612</y>
+      <w>126</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Jeu
+Package::jeu
+
+--
+
+
+--
+_+ main (String[])_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1260</x>
+      <y>600</y>
+      <w>162</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Batailles
+Package::Bataille
+
+--
++ campSorciere :Camps 
++ campFee        :Camps
+
+--
++ massacrerS(Sorciere):         String
++ massacrerF(Fee, Sorciere): String
++ donnerNombreSorcieres() :  int
++  donnerNombreFees() :        int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1272</x>
+      <y>402</y>
+      <w>126</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Camps
+Package::Bataille
+
+--
+- witch :List&lt;Sorciere&gt;
+- fee    :List&lt;Fee&gt;
+
+--
++ supprimerS(Sorciere)
++ supprimerF(Fee)
++ nbSorcieres(): int
++ nbFees(): int
++ finPartie():  String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1332</x>
+      <y>522</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=2</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1416</x>
+      <y>642</y>
+      <w>138</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..n
+prendre place &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>0</y>
+      <w>114</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>906</x>
+      <y>354</y>
+      <w>450</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2= 1..1
+m1= 16
+</panel_attributes>
+    <additional_attributes>710.0;80.0;710.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
