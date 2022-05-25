@@ -17,19 +17,19 @@ public class Jeu {
 		Scanner sc = new Scanner(System.in);
 		int NB_TOUR = 0;
 		while (!Exit) {
-			/* Incrémente le nombre de tour */
+			/* Incrï¿½mente le nombre de tour */
 			NB_TOUR ++;
 			/* Affiche le tour */
-			System.out.println("Tour numéro "+NB_TOUR+" c'est au tour de l'equipe des "+Equipe_Jeu+"s");
+			System.out.println("Tour numï¿½ro "+NB_TOUR+" c'est au tour de l'equipe des "+Equipe_Jeu+"s");
 			grille.afficher_map(); /* Affichage de la carte */
-			/* Définition point de départ */
+			/* Dï¿½finition point de dï¿½part */
 			boolean selection_depart = false;
 			while (!selection_depart) {
 				System.out.println("Quel pion voulez-vous bouger ?");
 				int depart = sc.nextInt();
 				if (grille.selection_valide(depart, Equipe_Jeu)) {
 					boolean selection_arivee = false;
-					/* Définition point d'arrivée */
+					/* Dï¿½finition point d'arrivï¿½e */
 					while (!selection_arivee) {
 						System.out.println("Ou voulez-vous aller ?");
 						int arivee = sc.nextInt();
@@ -46,15 +46,15 @@ public class Jeu {
 	        str = sc.nextLine();
 	        if (str.equals("y")) {
 	        	Exit = !Exit;
-	        }
-	        /*Sauvegarde de la carte + tour de jeu*/
-	        String save = sc.nextLine();
-			System.out.println("Voulez-vous sauvegarder le jeu ? (y/n)");
-	        save = sc.nextLine();
-	        if (save.equals("y")) {
-	        	sauvegarderpartie();
-	        }
-	        /* Changement de coté */
+	        	/*Sauvegarde de la carte + tour de jeu*/
+	        	String save = sc.nextLine();
+				System.out.println("Voulez-vous sauvegarder le jeu ? (y/n)");
+	        	save = sc.nextLine();
+	        	if (save.equals("y")) {
+	        		sauvegarderpartie();
+	        	}
+			}
+	        /* Changement de cotï¿½ */
 	        if (Equipe_Jeu == "Sorciere") {
 	        	Equipe_Jeu = "Fee";
 	        }
