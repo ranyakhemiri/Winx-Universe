@@ -94,6 +94,7 @@ public abstract class Personnage {
 				texte += p.win();
 			}
 		}
+			texte += this.getNom()+" a : "+this.getVie()+" point de vie";
 			return texte;
 		}
 	

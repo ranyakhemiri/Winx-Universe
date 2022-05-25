@@ -149,7 +149,6 @@ public class Grille{
 			if (perso2.getOccupant().getVie()<=0) {
 				map[perso2.getPosition()] = new Case(perso2.getPosition(),new Vide());
 				deplacement(perso1.getPosition(), perso2.getPosition());
-				
 			}
 		}
 		else if (perso1.getOccupant().getSymbole().charAt(0) == 'F') {

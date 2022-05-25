@@ -53,7 +53,14 @@ public class Jeu {
 	        str = sc.nextLine();
 	        if (str.equals("y")) {
 	        	Exit = !Exit;
-	        }
+	        	/*Sauvegarde de la carte + tour de jeu*/
+	        	String save = sc.nextLine();
+				System.out.println("Voulez-vous sauvegarder le jeu ? (y/n)");
+	        	save = sc.nextLine();
+	        	if (save.equals("y")) {
+	        		sauvegarderpartie();
+	        	}
+			}
 	        /* Changement de cot� */
 	        if (Equipe_Jeu == "Sorciere") {
 	        	Equipe_Jeu = "Fee";
@@ -62,4 +69,7 @@ public class Jeu {
 		}
 		sc.close();
 		}
+	public static void sauvegarderpartie() {
+		
+	}
 	}
