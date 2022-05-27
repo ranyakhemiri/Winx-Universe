@@ -62,13 +62,61 @@ public class Grille{
 			}
 		}
 	}
+	/**************************************** Création de la map initiale *******************************************/
+
 	public void init_map() {
 		init_terrain_Sorciere();
 		init_terrain_vide();
 		init_terrain_Fee();
 	}
 
-	
+	/***************************** Création de la map a partir du fichier de sauvegarde *****************************/
+
+	public void init_map_saved(String map_str){
+		for (int i = 0;i<64;i++){
+			char[] symbol = new char[2];
+			map_str.getChars(i*2, i*2+2, symbol, 0);
+			String test_symbol = String.valueOf(symbol);
+			switch (test_symbol){
+				case "SS":
+					map[i] = new Case(i,new Stormy());
+					break;
+				case "SI":
+					map[i] = new Case(i,new Icy());
+					break;
+				case "FB":
+					map[i] = new Case(i,new Bloom());
+					break;
+				case "FF":
+					map[i] = new Case(i,new Flora());
+					break;
+				case "FM":
+					map[i] = new Case(i,new Musa());
+					break;
+				case "FS":
+					map[i] = new Case(i,new Stella());
+					break;
+				case "  ":
+					map[i] = new Case(i,new Vide());
+					break;
+				default:
+					break;
+			}
+
+			
+		}
+
+
+	}
+	/******************************* Conversion de la grille en String pour sauvegarde ******************************/
+	public String GetMapString(){
+		String sortie = "";
+		for (int i =0;i<64;i++){
+			sortie += this.map[i].getOccupant().getSymbole();
+		}
+		return sortie;
+	}
+
 	/******************************* affichage de l'echiquier  ******************************/
 	public void afficher_map() {
         String maps = "   a  b  c  d  e  f  g  h\n1 ";
@@ -80,8 +128,10 @@ public class Grille{
             if ((i%8 == 0) && (i<64)) {maps += "|\n"+((i/8)+1)+" ";}
         }
         maps += "|";
-        System.out.println(maps);
+        System.out.println( maps);
     }
+
+	/******************************* Test validité de la séléction du départ  ******************************/
 	public boolean selection_valide(int i1 , String Equipe) {
 		if (map[i1].getOccupant().getSymbole().charAt(0) != Equipe.charAt(0)) {
 			return false;
