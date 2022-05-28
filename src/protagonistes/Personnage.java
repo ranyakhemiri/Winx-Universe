@@ -26,6 +26,9 @@ public abstract class Personnage {
 		return vie;
 	}
 	
+	public void setVie(int vie) {
+		this.vie = vie;
+	}
 	
 	public int getNbArmure() {
 		return NbArmure;

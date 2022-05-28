@@ -72,10 +72,11 @@ public class Grille{
 
 	/***************************** Création de la map a partir du fichier de sauvegarde *****************************/
 
-	public void init_map_saved(String map_str){
+	public void init_map_saved(String[] map_str){
+		System.out.println("Chargement de la partie...");
 		for (int i = 0;i<64;i++){
 			char[] symbol = new char[2];
-			map_str.getChars(i*2, i*2+2, symbol, 0);
+			map_str[0].getChars(i*2, i*2+2, symbol, 0);
 			String test_symbol = String.valueOf(symbol);
 			switch (test_symbol){
 				case "SS":
@@ -102,8 +103,11 @@ public class Grille{
 				default:
 					break;
 			}
-
-			
+			char[] vie = new char[2];
+			map_str[1].getChars(i*2,i*2+2,vie,0);
+			String vies = String.valueOf(vie);
+			int vies_int = Integer.valueOf(vies);
+			map[i].getOccupant().setVie(vies_int);
 		}
 
 
@@ -115,6 +119,18 @@ public class Grille{
 			sortie += this.map[i].getOccupant().getSymbole();
 		}
 		return sortie;
+	}
+
+	/***************************************** Sort la vie des personnages *******************************************/
+	public String GetMapVie(){
+		String vies = "";
+		for (int i=0;i<64;i++){
+			if (this.map[i].getOccupant().getVie() == 0){
+				vies += "00";
+			}
+			else vies += this.map[i].getOccupant().getVie();
+		}
+		return vies;
 	}
 
 	/******************************* affichage de l'echiquier  ******************************/

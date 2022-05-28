@@ -68,7 +68,7 @@ public class Jeu {
 				System.out.println("Voulez-vous sauvegarder le jeu ? (y/n)");
 	        	String save = scan.nextLine();
 	        	if (save.equals("y")) {
-	        		System.out.println(Save.sauvegarder(grille.GetMapString()));
+	        		System.out.println(Save.sauvegarder(grille.GetMapString(),grille.GetMapVie()));
 	        	}
 			}
 	        /* Changement de cot� */
