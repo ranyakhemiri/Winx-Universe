@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>885</x>
+      <y>55</y>
+      <w>80</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>_JEU_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>995</x>
+      <y>55</y>
+      <w>80</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>_INPUT CONSOLE_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>690</x>
+      <y>230</y>
+      <w>400</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>alternatif 
+--
+halign=left
+si deplacement pion
+
+
+-.
+position d'arrivée OK
+
+-.
+position d'arrivée KO
+
+
+
+-.
+position initiale KO
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>65</y>
+      <w>15</w>
+      <h>770</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1520.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>70</y>
+      <w>15</w>
+      <h>765</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1510.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>65</y>
+      <w>15</w>
+      <h>770</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1520.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>165</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+affichage du menu console</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>680</x>
+      <y>390</y>
+      <w>475</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>alternatif
+--
+halign=left
+si combat
+
+-.
+perdre combat
+
+
+-.
+gagner combat
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>235</y>
+      <w>305</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+entrer la position du pion à bouger</panel_attributes>
+    <additional_attributes>590.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>270</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+deplacement du pion OK</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>290</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+message d'erreur position invalide</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>90</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+rejoindre un camp</panel_attributes>
+    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>750</x>
+      <y>40</y>
+      <w>30</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Joueur</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>450</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+gagner un trésor</panel_attributes>
+    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>695</x>
+      <y>140</y>
+      <w>310</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>alternatif
+--
+halign=left
+si son tour
+-.
+tour camp jouer
+
+
+-.
+tour camp ennemi
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>425</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+perdre des points de vie</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>195</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+attendre le prochain tour</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>250</y>
+      <w>105</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+position du pion a bouger</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>330</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+message d'erreur impossible de bouger une case vide</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>345</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+message d'erreur impossible de bouger un pion adversaire</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>305</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+message d'erreur position d'un coéquipier</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>360</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+message d'erreur position invalide</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>110</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+ajout au camp</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>680</x>
+      <y>500</y>
+      <w>480</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>alternatif
+--
+halign=left
+si pause partie
+
+-.
+sauvegarde OK
+
+
+-.
+sauvergarde KO
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>625</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+voulez vous arrêter la partie?</panel_attributes>
+    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>510</y>
+      <w>305</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+réponse</panel_attributes>
+    <additional_attributes>590.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>530</y>
+      <w>105</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+y</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>565</y>
+      <w>105</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+n</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>540</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+enregistrement des tresors/points de vie/positions</panel_attributes>
+    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>580</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+passer au prochain tour</panel_attributes>
+    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>680</x>
+      <y>620</y>
+      <w>480</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>alternatif
+--
+halign=left
+si quitter partie
+
+-.
+quitter OK
+
+
+-.
+quitter KO
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>500</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+voulez vous sauvegarder le jeu?</panel_attributes>
+    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>635</y>
+      <w>305</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+réponse</panel_attributes>
+    <additional_attributes>590.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>650</y>
+      <w>105</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+y</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>680</y>
+      <w>105</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+n</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>660</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+quitter la partie</panel_attributes>
+    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>690</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+passer au prochain tour</panel_attributes>
+    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>680</x>
+      <y>725</y>
+      <w>480</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>alternatif
+--
+halign=left
+si charger partie
+
+-.
+charger OK
+
+
+
+-.
+charger KO
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>725</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+voulez vous charger la partie?</panel_attributes>
+    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>735</y>
+      <w>305</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+numéro de sauvergarde</panel_attributes>
+    <additional_attributes>590.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>755</y>
+      <w>105</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+y</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>790</y>
+      <w>105</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+n</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>770</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+charger des tresors/points de vie/positions</panel_attributes>
+    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>805</y>
+      <w>215</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+lancer une partie</panel_attributes>
+    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>765</y>
+      <w>105</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+numéro valide</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
