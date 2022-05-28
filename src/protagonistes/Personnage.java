@@ -1,4 +1,6 @@
 package protagonistes;
+import java.util.Set;
+
 import Bataille.Batailles;
 
 /**
@@ -25,7 +27,7 @@ public abstract class Personnage {
 	public int getVie() {
 		return vie;
 	}
-	
+
 	public void setVie(int vie) {
 		this.vie = vie;
 	}
@@ -33,12 +35,15 @@ public abstract class Personnage {
 	public int getNbArmure() {
 		return NbArmure;
 	}
+
+	public void setNbArmure(int nbarmure){
+		this.NbArmure = nbarmure;
+	}
 	
 	
 	public String die() {
 		String texte=" ";
 		texte+=this.getNom()+" n'a pas surv�cu \n";
-		//il faut remove ici
 		return texte;
 		}
 

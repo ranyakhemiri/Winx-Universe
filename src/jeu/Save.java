@@ -13,7 +13,7 @@ public class Save {
 
 
     /* Sauvegarde dans save.txt */
-    public static String sauvegarder(String partie,String vie) throws IOException{
+    public static String sauvegarder(String partie,String vie,String tres) throws IOException{
         File save_txt = new File("./src/jeu/save.txt");
         FileWriter saver = new FileWriter(save_txt,true);
         /* Si il y a déja un élément dans le fichier on rajoute un saut de ligne */
@@ -22,6 +22,7 @@ public class Save {
         }
         else saver.write(partie);
         saver.write("\n"+vie);
+        saver.write("\n"+tres);
         saver.close();
         return "partie sauvegardée !";
     };
@@ -34,20 +35,24 @@ public class Save {
         BufferedReader br = new BufferedReader(loader);
         String map = "";
         String mapvies = "";
+        String maptres = "";
         for (int i = 0;i<num_partie*2;i++){
             if (i==num_partie){
                 map = br.readLine();
                 mapvies = br.readLine();
+                maptres = br.readLine();
             }
             else {
+                br.readLine();
                 br.readLine();
                 br.readLine();
             }
         }
         br.close();
-        String[] sortie = new String[2];
+        String[] sortie = new String[3];
         sortie[0]=map;
         sortie[1]=mapvies;
+        sortie[2]=maptres;
         return sortie;
     }
 }

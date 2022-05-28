@@ -103,11 +103,18 @@ public class Grille{
 				default:
 					break;
 			}
+			/* Init des points de vie */
 			char[] vie = new char[2];
 			map_str[1].getChars(i*2,i*2+2,vie,0);
 			String vies = String.valueOf(vie);
 			int vies_int = Integer.valueOf(vies);
 			map[i].getOccupant().setVie(vies_int);
+			/* Init des points d'armures */
+			char[] tres = new char[2];
+			map_str[2].getChars(i*2,i*2+2,tres,0);
+			String treso = String.valueOf(tres);
+			int treso_int = Integer.valueOf(treso);
+			map[i].getOccupant().setNbArmure(treso_int);
 		}
 
 
@@ -133,6 +140,16 @@ public class Grille{
 		return vies;
 	}
 
+	public String GetMapTres(){
+		String arm = "";
+		for (int i=0;i<64;i++){
+			if (this.map[i].getOccupant().getNbArmure() == 0){
+				arm += "00";
+			}
+			else arm += this.map[i].getOccupant().getNbArmure();
+		}
+		return arm;
+	}
 	/******************************* affichage de l'echiquier  ******************************/
 	public void afficher_map() {
         String maps = "   a  b  c  d  e  f  g  h\n1 ";
