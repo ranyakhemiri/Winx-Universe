@@ -19,15 +19,16 @@ public class Batailles {
     /************************ eliminer un protagoniste ************************/
     public String massacrerS(Sorciere witch){
         String texte="";   
+        //suppression de la sorcière du camp Sorcière
         campSorciere.supprimerS(witch);
 		if (campSorciere.nbSorcieres() == 0 && campFee.nbFees() > 0) {
             texte="La sorciere "+ witch.getNom()+" a ete liminee \n";
-            
         }
         return texte;
     }
     public String massacrerF(Fee fee, Sorciere witch){
         String texte="";   
+        //suppression de la fee du camp Fee
         campFee.supprimerF(fee);
 		if (campFee.nbFees() == 0 && campSorciere.nbSorcieres() > 0) {
             witch.gagnerTresor();
@@ -45,6 +46,4 @@ public class Batailles {
 		return campFee.nbFees();
 	}
 
-
-    
 }

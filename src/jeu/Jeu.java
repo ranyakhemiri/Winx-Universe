@@ -34,21 +34,21 @@ public class Jeu {
 		boolean Exit = false;
 		int NB_TOUR = 0;
 		while (!Exit) {
-			/* Incr�mente le nombre de tour */
+			/* Incremente le nombre de tour */
 			NB_TOUR ++;
 			/* Affiche le tour */
 			System.out.println("Tour numero "+NB_TOUR+": c'est au tour de l'equipe des "+Equipe_Jeu+"s");
 			grille.afficher_map(); /* Affichage de la carte */
-			/* D�finition point de d�part */
+			/* Definition point de depart */
 			boolean selection_depart = false;
 			scan.nextLine();
 			while (!selection_depart) {
 				System.out.println("Quel pion voulez-vous bouger ?");
-				String strD= scan.nextLine(); //r�cup�re l'entr�e de l'utilisateur sous forme de lettre(colonne)+chiffre(ligne)
-				int depart = grille.modifier_input(strD); //traduit cette entr�e String en une coordonn�e valable
+				String strD= scan.nextLine(); //recupere l'entree de l'utilisateur sous forme de lettre(colonne)+chiffre(ligne)
+				int depart = grille.modifier_input(strD); //traduit cette entree String en une coordonnee valable
 				if (grille.selection_valide(depart, Equipe_Jeu)) {
 					boolean selection_arivee = false;
-					/* D�finition point d'arriv�e */
+					/* Definition point d'arrivee */
 					while (!selection_arivee) {
 						System.out.println("Ou voulez-vous aller ?");
 						String strA= scan.nextLine(); 
@@ -71,7 +71,7 @@ public class Jeu {
 	        		System.out.println(Save.sauvegarder(grille.GetMapString(),grille.GetMapVie(),grille.GetMapTres()));
 	        	}
 			}
-	        /* Changement de cot� */
+	        /* Changement de cote */
 	        if (Equipe_Jeu == "Sorciere") {
 	        	Equipe_Jeu = "Fee";
 	        }

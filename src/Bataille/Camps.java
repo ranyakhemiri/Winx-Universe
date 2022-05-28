@@ -10,8 +10,9 @@ import protagonistes.Sorciere;
  */ 
 
 public class Camps {
-    private List<Sorciere> witch= new ArrayList<>(16);
-	private List<Fee> fee= new ArrayList<>(16);
+	//32 protagnistes au total :
+    private List<Sorciere> witch= new ArrayList<>(16); //16 protagonistes par camp Sorciere
+	private List<Fee> fee= new ArrayList<>(16); //16 protagonistes par camp Fee
 
 	public void supprimerS(Sorciere w) {
 		witch.remove(w);

@@ -42,7 +42,7 @@ public class Windows extends JFrame{
 
 		/* Partie adaptative */
 		/* Affichage du tour en cour */
-		JTextField textField_tourdejeu = new JTextField("C'est au tour de l'équipe "+TOUR_JEU);
+		JTextField textField_tourdejeu = new JTextField("C'est au tour de l'ï¿½quipe "+TOUR_JEU);
 		textField_tourdejeu.setBounds(10, 27, 185, 20);
 		textField_tourdejeu.setEditable(false);
 		getContentPane().add(textField_tourdejeu);
@@ -54,7 +54,7 @@ public class Windows extends JFrame{
 		textField_event.setEditable(false);
 		getContentPane().add(textField_event);
 		
-		/* Création de la grille */
+		/* Crï¿½ation de la grille */
 		Grille grille = new Grille(); 
 		grille.init_map();
 		JPanel panel = new JPanel();
@@ -79,7 +79,11 @@ public class Windows extends JFrame{
 				public void actionPerformed(ActionEvent e) {
 						for (int y=0;y<64;y++) {
 							if (Jcase[y].isSelected()) {
+								//enregistrement du personnage selectionnÃ©:
 								setCase_selectionee(Jcase[y]);
+								//affichage du personnage selectionnÃ© et sa position sur la console:
+								System.out.println("Personnage selectionnÃ©: "+ Jcase[y].getOccupant().getNom()
+								+ "      | Position intiale: "+ Jcase[y].getPosition());
 							}
 						}
 					}
