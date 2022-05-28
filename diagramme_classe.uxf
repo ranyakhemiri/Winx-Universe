@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>16</zoom_level>
+  <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1984</x>
-      <y>624</y>
-      <w>448</w>
-      <h>496</h>
+      <x>868</x>
+      <y>700</y>
+      <w>196</w>
+      <h>217</h>
     </coordinates>
     <panel_attributes>Personnage
 Package::protagonistes
@@ -33,10 +33,10 @@ Package::protagonistes
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1824</x>
-      <y>1296</y>
-      <w>448</w>
-      <h>272</h>
+      <x>798</x>
+      <y>994</y>
+      <w>196</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>Fee
 --
@@ -55,10 +55,10 @@ Package::protagonistes
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2064</x>
-      <y>1104</y>
-      <w>160</w>
-      <h>224</h>
+      <x>903</x>
+      <y>910</y>
+      <w>70</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>80.0;10.0;10.0;120.0</additional_attributes>
@@ -66,10 +66,10 @@ Package::protagonistes
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2352</x>
-      <y>1296</y>
-      <w>448</w>
-      <h>304</h>
+      <x>1029</x>
+      <y>994</y>
+      <w>196</w>
+      <h>133</h>
     </coordinates>
     <panel_attributes>Sorciere
 --
@@ -90,10 +90,10 @@ Package::protagonistes
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2240</x>
-      <y>1104</y>
-      <w>368</w>
-      <h>224</h>
+      <x>980</x>
+      <y>910</y>
+      <w>161</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;210.0;120.0</additional_attributes>
@@ -101,10 +101,10 @@ Package::protagonistes
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1504</x>
-      <y>1296</y>
-      <w>272</w>
-      <h>192</h>
+      <x>658</x>
+      <y>994</y>
+      <w>119</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Vide
 --
@@ -119,10 +119,10 @@ Package::protagonistes
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1632</x>
-      <y>1104</y>
-      <w>464</w>
-      <h>224</h>
+      <x>714</x>
+      <y>910</y>
+      <w>203</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>270.0;10.0;10.0;120.0</additional_attributes>
@@ -130,10 +130,10 @@ Package::protagonistes
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1696</x>
-      <y>1792</y>
-      <w>144</w>
-      <h>80</h>
+      <x>742</x>
+      <y>1211</y>
+      <w>63</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>Bloom
 --
@@ -144,10 +144,10 @@ Package::protagonistes
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1872</x>
-      <y>1792</y>
-      <w>144</w>
-      <h>80</h>
+      <x>819</x>
+      <y>1211</y>
+      <w>63</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>Flora
 --
@@ -158,10 +158,10 @@ Package::protagonistes
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2048</x>
-      <y>1792</y>
-      <w>144</w>
-      <h>80</h>
+      <x>896</x>
+      <y>1211</y>
+      <w>63</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>Stella
 --
@@ -172,10 +172,10 @@ Package::protagonistes
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2208</x>
-      <y>1792</y>
-      <w>144</w>
-      <h>80</h>
+      <x>966</x>
+      <y>1211</y>
+      <w>63</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>Musa
 --
@@ -186,10 +186,10 @@ Package::protagonistes
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2432</x>
-      <y>1792</y>
-      <w>144</w>
-      <h>80</h>
+      <x>1064</x>
+      <y>1211</y>
+      <w>63</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>Stormy
 --
@@ -200,10 +200,10 @@ Package::protagonistes
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2592</x>
-      <y>1792</y>
-      <w>144</w>
-      <h>80</h>
+      <x>1134</x>
+      <y>1211</y>
+      <w>63</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>Icy
 --
@@ -214,10 +214,10 @@ Package::protagonistes
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2480</x>
-      <y>1584</y>
-      <w>48</w>
-      <h>240</h>
+      <x>1085</x>
+      <y>1120</y>
+      <w>21</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
@@ -225,10 +225,10 @@ Package::protagonistes
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2640</x>
-      <y>1584</y>
-      <w>48</w>
-      <h>240</h>
+      <x>1155</x>
+      <y>1120</y>
+      <w>21</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
@@ -236,10 +236,10 @@ Package::protagonistes
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2128</x>
-      <y>1552</y>
-      <w>192</w>
-      <h>272</h>
+      <x>931</x>
+      <y>1106</y>
+      <w>84</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;100.0;150.0</additional_attributes>
@@ -247,10 +247,10 @@ Package::protagonistes
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2048</x>
-      <y>1552</y>
-      <w>96</w>
-      <h>272</h>
+      <x>896</x>
+      <y>1106</y>
+      <w>42</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;40.0;150.0</additional_attributes>
@@ -258,10 +258,10 @@ Package::protagonistes
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1936</x>
-      <y>1552</y>
-      <w>96</w>
-      <h>272</h>
+      <x>847</x>
+      <y>1106</y>
+      <w>42</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>40.0;10.0;10.0;150.0</additional_attributes>
@@ -269,10 +269,10 @@ Package::protagonistes
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1760</x>
-      <y>1552</y>
-      <w>192</w>
-      <h>272</h>
+      <x>770</x>
+      <y>1106</y>
+      <w>84</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>100.0;10.0;10.0;150.0</additional_attributes>
@@ -280,10 +280,10 @@ Package::protagonistes
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>880</x>
-      <y>1408</y>
-      <w>2064</w>
-      <h>640</h>
+      <x>385</x>
+      <y>1043</y>
+      <w>903</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..1
@@ -294,10 +294,10 @@ m2=0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>752</x>
-      <y>672</y>
-      <w>448</w>
-      <h>272</h>
+      <x>329</x>
+      <y>721</y>
+      <w>196</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>Tresor
 Package::tresors
@@ -316,10 +316,10 @@ Package::tresors
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>752</x>
-      <y>1296</y>
-      <w>304</w>
-      <h>192</h>
+      <x>329</x>
+      <y>994</y>
+      <w>133</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Sortilege 
 --
@@ -334,10 +334,10 @@ Package::tresors
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1136</x>
-      <y>1296</y>
-      <w>304</w>
-      <h>192</h>
+      <x>497</x>
+      <y>994</y>
+      <w>133</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Pouvoir 
 --
@@ -352,10 +352,10 @@ Package::tresors
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
-      <y>1296</y>
-      <w>304</w>
-      <h>192</h>
+      <x>175</x>
+      <y>994</y>
+      <w>133</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Armure  
 --
@@ -370,10 +370,10 @@ Package::tresors
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>544</x>
-      <y>928</y>
-      <w>320</w>
-      <h>400</h>
+      <x>238</x>
+      <y>833</y>
+      <w>140</w>
+      <h>175</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>180.0;10.0;10.0;230.0</additional_attributes>
@@ -381,10 +381,10 @@ Package::tresors
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1072</x>
-      <y>928</y>
-      <w>240</w>
-      <h>400</h>
+      <x>469</x>
+      <y>833</y>
+      <w>105</w>
+      <h>175</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;130.0;230.0</additional_attributes>
@@ -392,10 +392,10 @@ Package::tresors
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>864</x>
-      <y>928</y>
-      <w>128</w>
-      <h>400</h>
+      <x>378</x>
+      <y>833</y>
+      <w>56</w>
+      <h>175</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>60.0;10.0;10.0;230.0</additional_attributes>
@@ -404,9 +404,9 @@ Package::tresors
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>672</y>
-      <w>448</w>
-      <h>272</h>
+      <y>721</y>
+      <w>196</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>&lt;&lt; enum &gt;&gt;
 Package::tresors
@@ -423,10 +423,10 @@ _+generateRandomTresor(): Typetresorr_</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>432</x>
-      <y>800</y>
-      <w>352</w>
-      <h>64</h>
+      <x>189</x>
+      <y>777</y>
+      <w>154</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..1
@@ -436,10 +436,10 @@ m2=1..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1248</x>
-      <y>1472</y>
-      <w>608</w>
-      <h>240</h>
+      <x>546</x>
+      <y>1071</y>
+      <w>266</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..1
@@ -450,10 +450,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>512</x>
-      <y>1024</y>
-      <w>2592</w>
-      <h>1184</h>
+      <x>224</x>
+      <y>875</y>
+      <w>1134</w>
+      <h>518</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..1
@@ -464,10 +464,10 @@ m2=0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3360</x>
-      <y>560</y>
-      <w>336</w>
-      <h>320</h>
+      <x>1470</x>
+      <y>672</y>
+      <w>147</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>Case
 Package::maps
@@ -487,10 +487,10 @@ Package::maps
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2416</x>
-      <y>656</y>
-      <w>976</w>
-      <h>80</h>
+      <x>1057</x>
+      <y>714</y>
+      <w>427</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..1
@@ -501,10 +501,10 @@ occuper &gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3984</x>
-      <y>560</y>
-      <w>432</w>
-      <h>496</h>
+      <x>1743</x>
+      <y>672</y>
+      <w>189</w>
+      <h>217</h>
     </coordinates>
     <panel_attributes>Grille
 Package::maps
@@ -532,10 +532,10 @@ Package::maps
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3680</x>
-      <y>720</y>
-      <w>336</w>
-      <h>64</h>
+      <x>1610</x>
+      <y>742</y>
+      <w>147</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2= 64
@@ -545,10 +545,10 @@ m1= 1..1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>4112</x>
-      <y>1632</y>
-      <w>336</w>
-      <h>208</h>
+      <x>1799</x>
+      <y>1141</y>
+      <w>147</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>Jeu
 Package::jeu
@@ -563,10 +563,10 @@ _+ main (String[])_</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3360</x>
-      <y>1600</y>
-      <w>432</w>
-      <h>336</h>
+      <x>1470</x>
+      <y>1127</y>
+      <w>189</w>
+      <h>147</h>
     </coordinates>
     <panel_attributes>Batailles
 Package::Bataille
@@ -585,10 +585,10 @@ Package::Bataille
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3392</x>
-      <y>1072</y>
-      <w>336</w>
-      <h>336</h>
+      <x>1484</x>
+      <y>896</y>
+      <w>147</w>
+      <h>147</h>
     </coordinates>
     <panel_attributes>Camps
 Package::Bataille
@@ -609,10 +609,10 @@ Package::Bataille
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3552</x>
-      <y>1392</y>
-      <w>80</w>
-      <h>240</h>
+      <x>1554</x>
+      <y>1036</y>
+      <w>35</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..1
@@ -622,10 +622,10 @@ m2=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3776</x>
-      <y>1712</y>
-      <w>368</w>
-      <h>80</h>
+      <x>1652</x>
+      <y>1176</y>
+      <w>161</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
@@ -636,21 +636,10 @@ prendre place &gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>704</x>
-      <y>0</y>
-      <w>304</w>
-      <h>48</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>2416</x>
-      <y>944</y>
-      <w>1200</w>
-      <h>160</h>
+      <x>1057</x>
+      <y>840</y>
+      <w>525</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2= 1..1
