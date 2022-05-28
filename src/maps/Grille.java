@@ -11,6 +11,7 @@ import protagonistes.*;
  * @param init_terrain_vide initialise les cases vides sur l'echiquier
  * @param init_terrain_Fee place les fees sur l'echiquier inital
  * @param init_map genere l'echiquier initial en sa totalite
+ * @param init_map_saved permet de generer un echiquier qui correspond a une partie enregistrée 
  * @param afficher_map affichage de l'echiquier en forme de grille 
  * @param deplacement change l'emplacement des protagnistes suite a leur deplacement
  * @param combat gere les combats entre les deux camps
