@@ -1,5 +1,4 @@
 package protagonistes;
-import java.util.Set;
 
 import Bataille.Batailles;
 
